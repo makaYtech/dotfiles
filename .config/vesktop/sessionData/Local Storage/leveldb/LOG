@@ -1,9 +1,0 @@
-2026/01/03-15:16:26.299 ef4 Reusing MANIFEST /home/maka/.config/vesktop/sessionData/Local Storage/leveldb/MANIFEST-000001
-2026/01/03-15:16:26.314 ef4 Recovering log #7292
-2026/01/03-15:16:26.315 ef4 Reusing old log /home/maka/.config/vesktop/sessionData/Local Storage/leveldb/007292.log 
-2026/01/03-15:21:48.582 ec0 Level-0 table #7295: started
-2026/01/03-15:21:48.584 ec0 Level-0 table #7295: 38255 bytes OK
-2026/01/03-15:21:48.585 ec0 Delete type=0 #7292
-2026/01/03-18:37:37.733 ef4 Level-0 table #7297: started
-2026/01/03-18:37:37.736 ef4 Level-0 table #7297: 39421 bytes OK
-2026/01/03-18:37:37.738 ef4 Delete type=0 #7294
