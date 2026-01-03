@@ -1,0 +1,90 @@
+{
+    "height": 30,
+    "spacing": 0,
+    "modules-left": [
+        "custom/arch",
+        "sway/workspaces"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": ["custom/playerctl", "sway/language", "pulseaudio", "network", "tray"],
+     "custom/arch": {
+          "format": "",
+          "tooltip": false,
+          "on-click": "wofi --allow-images --show drun --columns 3 - | -s ~/.config/wofi/style.css",
+          "class": "arch-icon"
+    },
+    "sway/language": {
+  	  "format": "{short}",  
+      "on-click": "swaymsg input type:keyboard xkb_switch_layout next",
+      "tooltip": true
+    },
+    "custom/playerctl": {
+      "exec": "~/.config/waybar/playerctl.py",
+      "interval": 2,
+      "return-type": "json",
+      "format": "{text}",
+      "tooltip-format": "{alt}",
+      "on-click": "playerctl -p spotify play-pause",
+      "on-click-right": "playerctl -p spotify next",
+      "on-click-middle": "playerctl -p spotify previous"
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "network": {
+      "format": "{icon} {signalStrength}%",
+      "format-disconnected": "󰖪 Disconnected",
+      "format-icons": [ "󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 " ],
+      "tooltip-format": "{ipaddr} via {essid}"
+    },
+    "pulseaudio": {
+      "format": "{icon} {volume}%",
+      "format-muted": "󰖁",
+      "format-icons": {
+        "default": [ "󰕿 ", "󰖀 ", "󰕾 " ],
+        "css-module": true,
+        "class": "fucking-module"
+      },
+      "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+      "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+      "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%"
+    },
+    "sway/workspaces": {
+      "disable-scroll": true,
+      "all-outputs": false,
+      "format": "{icon}",
+      "on-click": "activate",
+      "persistent-workspaces": {
+          "DP-3": [1,2,3,4,5,6,7,8,9,10],
+          "HDMI-A-4": [11,12,13,14,15,16,17,18,19,20]
+      },
+      "format-icons": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "10",
+        "11": "1",
+        "12": "2",
+        "13": "3",
+        "14": "4",
+        "15": "5",
+        "16": "6",
+        "17": "7",
+        "18": "8",
+        "19": "9",
+        "20": "10"
+      }
+    }
+}

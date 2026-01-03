@@ -1,0 +1,8 @@
+{
+    "height": 30,
+    "modules-left": ["custom/arch", "hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "network", "tray"],
+    "custom/arch": {"format": "", "on-click": "wofi --show drun"},
+    "clock": {"format": "{:%H:%M}"}
+}

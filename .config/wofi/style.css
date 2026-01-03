@@ -1,0 +1,14 @@
+* {
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif, Nerd Font Propo;
+    font-size: 15px;
+    color: #ebdbb2;
+    border-radius: 15px;
+}
+
+window {
+    background-color: rgba(20, 20, 20, 0.85);
+}
+
+#entry {
+    padding: 4px;
+}
