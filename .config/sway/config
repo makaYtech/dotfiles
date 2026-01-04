@@ -224,10 +224,10 @@ exec swaymsg 'workspace 13; exec telegram-desktop; workspace 1'
     bindsym $mod+e layout toggle split
 
     # Make the current focus fullscreen
-    bindsym $mod+shift+f fullscreen
+    bindsym $mod+shift+o fullscreen
 
     # Toggle the current focus between tiling and floating mode
-    bindsym $mod+Shift+space floating toggle
+    bindsym $mod+Shift+f floating toggle
 
     # Swap focus between the tiling area and the floating area
     bindsym $mod+space focus mode_toggle

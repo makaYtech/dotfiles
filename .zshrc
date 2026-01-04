@@ -1,7 +1,7 @@
 clear
 fastfetch
-if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-    tmux attach || tmux new-session
+if command -v tmux &> /dev/null && [ -z "$TMUX" ] && [ "$(tty)" != "/dev/tty1" ]; then
+    tmux a || tmux
 fi
 
 if [ "$(tty)" = "/dev/tty1" ] && [ -z "$DISPLAY" ] && [ -z "$WAYLAND_DISPLAY" ]; then
@@ -16,7 +16,7 @@ export MOZ_ENABLE_WAYLAND=1
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-plugins=(git z sudo zsh-autosuggestions zsh-autocomplete)
+plugins=(git sudo zsh-autosuggestions zsh-autocomplete)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -35,3 +35,4 @@ export NVM_DIR="$HOME/.nvm"
 alias zapret-config='$HOME/zapret-configs/install.sh'
 alias zapret-utils='$HOME/zapret-configs/utils-zapret.sh'
 alias zapret-utils='$HOME/zapret-configs/utils-zapret.sh'
+cd
