@@ -1,3 +1,7 @@
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec /usr/lib/xdg-desktop-portal -r &
+exec sleep 1
+exec /usr/lib/xdg-desktop-portal-wlr &
 exec export XDG_CURRENT_DESKTOP=sway
 exec export MOZ_ENABLE_WAYLAND=1
 exec export QT_QPA_PLATFORM=wayland
@@ -23,14 +27,8 @@ set $menu wofi --allow-images --show drun --columns 3 - | -s ~/.config/wofi/styl
 
 ### Output configuration
 
-exec swaybg -i /home/maka/.config/hypr/walpappers/5120x2880.png
+exec swaybg -i ~/.config/sway/wallpapers/5120x2880.png
 
-output HDMI-A-4 {
-    resolution 1920x1080 
-    mode 1920x1080@100Hz
-    position 0,0
-    scale 1
-}
 output DP-3 {
     resolution 2560x1440
     mode 2560x1440@120Hz
@@ -38,9 +36,16 @@ output DP-3 {
     scale 1
 }
 
+output HDMI-A-4 {
+    resolution 1920x1080 
+    mode 1920x1080@100Hz
+    position 0,0
+    scale 1
+}
+
 exec swaymsg 'workspace 14; exec easyeffects; workspace 1'
 exec swaymsg 'workspace 13; exec telegram-desktop; workspace 1'
-exec swaymsg 'workspace 11; exec firefox; workspace 1'
+exec swaymsg 'workspace 11; exec  ; workspace 1'
 
 ### Idle configuration
 #
@@ -86,7 +91,7 @@ exec swaymsg 'workspace 11; exec firefox; workspace 1'
 # Basics:
 #
 
-    bindsym $mod+b exec firefox
+    bindsym $mod+b exec waterfox
     bindsym $mod+shift+m exec pcmanfm
     bindsym ctrl+alt exec kitty btop -p 0
     bindsym $mod+t exec telegram-desktop

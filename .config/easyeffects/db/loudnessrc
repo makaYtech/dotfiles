@@ -1,8 +1,6 @@
 [sie][Loudness#0]
+bypass=true
 clippingRange=7.07
 fft=5
 iirApproximation=4
-mode=1
-outputGain=5
-std=0
-volume=7
+std=1
