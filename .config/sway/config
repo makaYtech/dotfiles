@@ -93,7 +93,7 @@ exec swaymsg 'workspace 11; exec waterfox; workspace 1'
 
     bindsym $mod+b exec waterfox
     bindsym $mod+shift+m exec pcmanfm
-    bindsym ctrl+alt exec alacritty btop -p 0
+    bindsym $mod+tab exec alacritty -e btop
     bindsym $mod+t exec telegram-desktop
     bindsym $mod+s exec /usr/bin/steam
     bindsym $mod+d exec vesktop

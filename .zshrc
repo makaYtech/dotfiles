@@ -1,12 +1,11 @@
-clear
 fastfetch
 if command -v tmux &> /dev/null && [ -z "$TMUX" ] && [ "$(tty)" != "/dev/tty1" ]; then
-    tmux a || tmux
+  tmux a || tmux
 fi
 
-# if [ "$(tty)" = "/dev/tty1" ] && [ -z "$DISPLAY" ] && [ -z "$WAYLAND_DISPLAY" ]; then
-#   exec sway
-# fi
+if [ "$(tty)" = "/dev/tty1" ] && [ -z "$DISPLAY" ] && [ -z "$WAYLAND_DISPLAY" ]; then
+  exec sway
+fi
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
