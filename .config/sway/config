@@ -1,4 +1,4 @@
-exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+# exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec /usr/lib/xdg-desktop-portal -r &
 exec sleep 1
 exec /usr/lib/xdg-desktop-portal-wlr &
@@ -21,13 +21,13 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term kitty
+set $term alacritty
 # Your preferred application launcher
 set $menu wofi --allow-images --show drun --columns 3 - | -s ~/.config/wofi/style.css
 
 ### Output configuration
 
-exec swaybg -i ~/.config/sway/wallpapers/5120x2880.png
+exec swaybg -i ~/.config/sway/wallpaper/5120x2880.png
 
 output DP-3 {
     resolution 2560x1440
@@ -45,7 +45,7 @@ output HDMI-A-4 {
 
 exec swaymsg 'workspace 14; exec easyeffects; workspace 1'
 exec swaymsg 'workspace 13; exec telegram-desktop; workspace 1'
-exec swaymsg 'workspace 11; exec  ; workspace 1'
+exec swaymsg 'workspace 11; exec waterfox; workspace 1'
 
 ### Idle configuration
 #
@@ -93,7 +93,7 @@ exec swaymsg 'workspace 11; exec  ; workspace 1'
 
     bindsym $mod+b exec waterfox
     bindsym $mod+shift+m exec pcmanfm
-    bindsym ctrl+alt exec kitty btop -p 0
+    bindsym ctrl+alt exec alacritty btop -p 0
     bindsym $mod+t exec telegram-desktop
     bindsym $mod+s exec /usr/bin/steam
     bindsym $mod+d exec vesktop
@@ -103,6 +103,7 @@ exec swaymsg 'workspace 11; exec  ; workspace 1'
     bindsym ALT+TAB focuscurrentorlast
     bindsym $mod+m exec spotify-launcher
     bindsym $mod+shift+P exec systemctl poweroff
+    bindsym $mod+shift+U exec systemctl reboot
     bindsym $mod+f exec nekoray
     bindsym $mod+q exec $term
     bindsym $mod+c kill
@@ -120,7 +121,6 @@ exec swaymsg 'workspace 11; exec  ; workspace 1'
     exec mako
     exec /lib/polkit-1/polkitd
     exec docker start searxng
-    exec python /home/maka/onlineQbit/torrent_bot1.py
     exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #
 # Moving around:
