@@ -1,0 +1,5 @@
+@define-color background-hover rgba(70, 78, 96, 0.95);
+@define-color background-active rgba(70, 78, 96, 0.95);
+@define-color background-inactive rgba(70, 78, 96, 0.85);
+@define-color background rgba(46, 52, 64, 0.5);
+@define-color color #ebdbb2;
