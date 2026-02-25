@@ -3,12 +3,18 @@
     "spacing": 0,
     "modules-left": [
         "custom/arch",
-        "sway/workspaces"
+        "hyprland/workspaces"
     ],
     "modules-center": [
         "clock"
     ],
-    "modules-right": ["custom/playerctl", "sway/language", "pulseaudio", "network", "tray"],
+    "modules-right": [
+      "custom/playerctl",
+      "hyprland/language",
+      "pulseaudio",
+      "network",
+      "tray"
+    ],
      "custom/arch": {
           "format": "",
           "tooltip": false,
@@ -48,8 +54,7 @@
       "format-muted": "󰖁",
       "format-icons": {
         "default": [ "󰕿 ", "󰖀 ", "󰕾 " ],
-        "css-module": true,
-        "class": "fucking-module"
+        "css-module": true
       },
       "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
       "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",

@@ -1,5 +1,6 @@
 [sie][Compressor#0]
 attack=3
+bypass=true
 release=80
 sidechainInputDevice=alsa_input.usb-fifinemicrophone.com_FIFINE_Microphone_000000000000-00.mono-fallback
 sidechainSource=4

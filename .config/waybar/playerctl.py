@@ -91,11 +91,11 @@ def main():
 
     # Форматируем отображаемый текст
     if title and artist:
-        display_text = f" {title} - {artist}"
+        display_text = f"  {title} - {artist}"
     elif title:
-        display_text = f" {title}"
+        display_text = f"  {title}"
     else:
-        display_text = " No media"
+        display_text = "  No media"
 
     # Форматируем всплывающую подсказку
     tooltip_lines = []
