@@ -31,7 +31,7 @@ Scope {
 
 					Process {
 						id: dateProc
-						command: ["date", "+%H:%M"]
+						command: ["date", "+%H:%M:%S"]
 						running: true
 						stdout: SplitParser {
 							onRead: data => timetxt.text = data
@@ -112,7 +112,7 @@ Scope {
 				anchors.fill: timetxt
 				blurEnabled: true
 				blurMax: 32
-				blur: 1.0
+				blur: 0.2
 			}
 
 //----------------------------------------------------------------------
@@ -125,8 +125,8 @@ Scope {
 					var x = (e.x / parent.width - 0.5) * 2;
 					var y = (e.y / parent.height - 0.5) * 2;
 
-					timetxt.y = 280 + y * 3;
-					timetxt.x = 730 + x * 5;
+					timetxt.y = 280 + y * 4;
+					timetxt.x = 710 + x * 6;
 
 					bg.x = -50 + x * 2;
 					mid.x = -50 + x * 4;
