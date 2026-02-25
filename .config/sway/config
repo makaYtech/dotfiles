@@ -44,7 +44,8 @@ output HDMI-A-4 {
 }
 
 exec swaymsg 'workspace 14; exec easyeffects; workspace 1'
-exec swaymsg 'workspace 13; exec telegram-desktop; workspace 1'
+exec swaymsg 'workspace 13; exec Telegram; workspace 1'
+exec swaymsg 'workspace 12; exec spotify-launcher workspace 1'
 exec swaymsg 'workspace 11; exec waterfox; workspace 1'
 
 ### Idle configuration
