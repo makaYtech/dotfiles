@@ -45,6 +45,8 @@ Scope {
 					}
 			}
 
+//-----------------------Image------------------------------------------
+
 			Image {
 				id: bg_2
 				anchors.top: parent.top
@@ -81,6 +83,8 @@ Scope {
 				anchors.fill: bg_2
 			}
 
+//-----------------------MultiEffect--------------------------------
+
 			MultiEffect {
 				source: bg
 				anchors.fill: bg
@@ -111,6 +115,8 @@ Scope {
 				blur: 1.0
 			}
 
+//----------------------------------------------------------------------
+
 			MouseArea {
 				anchors.fill: parent
 				enabled: true
@@ -122,9 +128,9 @@ Scope {
 					timetxt.y = 280 + y * 3;
 					timetxt.x = 730 + x * 5;
 
-					bg.x = x * 2;
-					mid.x = x * 4;
-					fg.x = x * 5;
+					bg.x = -50 + x * 2;
+					mid.x = -50 + x * 4;
+					fg.x = -50 + x * 5;
 				}
 			}
 		}
