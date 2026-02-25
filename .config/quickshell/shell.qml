@@ -1,6 +1,11 @@
 import Quickshell
 import QtQuick
+import "bar" as Bar
 
 ShellRoot {
-    Bg {}
+	Bg {}
+
+	Bar.Bar {
+		id: bar
+	}
 }
