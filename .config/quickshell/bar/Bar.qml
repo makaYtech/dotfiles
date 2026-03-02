@@ -37,7 +37,7 @@ PanelWindow {
       right: parent.right
     }
 
-    implicitHeight: 48
+    implicitHeight: 30
 
     Rectangle {
       anchors {
@@ -53,11 +53,10 @@ PanelWindow {
       Rectangle {
         z: -1
         anchors.fill: parent
-        border.color: "#BE850E"
-        border.width: 4
+        border.color: '#d8b977'
+        border.width: 3
         radius: 10
-        color: "transparent"
-        anchors.margins: -4
+        color: '#842e3440'
       }
 
       RowLayout {
@@ -90,11 +89,10 @@ PanelWindow {
       Rectangle {
         z: -1
         anchors.fill: parent
-        border.color: "#BE850E"
-        border.width: 4
+        border.color: "#d8b977"
+        border.width: 3
         radius: 10
-        color: "transparent"
-        anchors.margins: -4
+        color: "#842e3440"
       }
 
       RowLayout {
