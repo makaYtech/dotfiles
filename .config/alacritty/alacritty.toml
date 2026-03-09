@@ -5,48 +5,15 @@ dynamic_title = true
 dimensions = { columns = 120, lines = 40 }
 
 [font]
-normal = { family = "Adwaita Mono", style = "Regular" }
-bold = { family = "Adwaita Mono", style = "Bold" }
-italic = { family = "Adwaita Mono", style = "Italic" }
-bold_italic = { family = "Adwaita Mono", style = "Bold Italic" }
 size = 11.0
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
 
-[scrolling]
-history = 5000
-multiplier = 3
-
-[colors.primary]
-background = "#1d2021"
-foreground = "#ebdbb2"
-
-[colors.cursor]
-text = "#665c54"  # cursor_text_color
-cursor = "#bdae93"  # cursor
-
-[colors.selection]
-text = "#ebdbb2"  # selection_foreground
-background = "#d65d0e"  # selection_background
-
-# Основные 16 цветов
-[colors.normal]
-black = "#3c3836"    # color0
-red = "#cc241d"      # color1
-green = "#98971a"    # color2
-yellow = "#d79921"   # color3
-blue = "#458588"     # color4
-magenta = "#b16286"  # color5
-cyan = "#689d6a"     # color6
-white = "#a89984"    # color7
-
-[colors.bright]
-black = "#928374"    # color8
-red = "#fb4934"      # color9
-green = "#b8bb26"    # color10
-yellow = "#fabd2f"   # color11
-blue = "#83a598"     # color12
-magenta = "#d3869b"  # color13
-cyan = "#8ec07c"     # color14
-white = "#fbf1c7"    # color15
+[colors]
+primary = { background = "#282828", foreground = "#ebdbb2" }
+cursor = { text = "#282828", cursor = "#d79921" }
+selection = { text = "#ebdbb2", background = "#3c3836" }
+normal = { black = "#282828", red = "#cc241d", green = "#98971a", yellow = "#d79921", blue = "#458588", magenta = "#b16286", cyan = "#689d6a", white = "#a89984" }
+bright = { black = "#928374", red = "#fb4934", green = "#b8bb26", yellow = "#fabd2f", blue = "#83a598", magenta = "#d3869b", cyan = "#8ec07c", white = "#ebdbb2" }
 
 # URL
 [hints]
