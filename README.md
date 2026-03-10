@@ -1,6 +1,6 @@
 # My Arch Linux Rice
 
-![Screenshot](screenshots/desktop.png)
+![Screenshot](desktop.png)
 
 Данный репозиторий содержит конфигурационные файлы (dotfiles) для моей рабочей среды на **Arch Linux**.  
 Все настройки проверены исключительно на Arch Linux и используют возможности этого дистрибутива.
