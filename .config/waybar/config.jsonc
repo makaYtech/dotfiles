@@ -3,14 +3,14 @@
     "spacing": 0,
     "modules-left": [
         "custom/arch",
-        "hyprland/workspaces"
+        "niri/workspaces"
     ],
     "modules-center": [
         "clock"
     ],
     "modules-right": [
       "custom/playerctl",
-      "hyprland/language",
+      "niri/language",
       "pulseaudio",
       "network",
       "tray"

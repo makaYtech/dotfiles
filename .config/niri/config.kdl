@@ -86,7 +86,7 @@ layout {
     // If you don't like that, you should uncomment `prefer-no-csd` below.
     // Niri will draw focus ring and border *around* windows that agree to omit their
     // client-side decorations.
-    //
+    //брый день. С оператором встретилась, договор подписали, сумму за поездку передала, расписку взяла. Перед поездкой скинут ссылку, нужно будет 
     // Alternatively, you can override it with a window rule called
     // `draw-border-with-background`.
 
@@ -98,19 +98,31 @@ layout {
         // How many logical pixels the ring extends out from the windows.
         width 3
 
+        
+        active-gradient from="#eee0b7" to="#d79921" angle=45
+         //active {
+           //animation {
+             //spring damping-ratio=1.0 stiffness=800 epsilon=0.0001
+           //}
+           //gradient {
+             //from "#d79921"
+             //to   "#d65d0e" 
+             //angle 45
+           //}брый день. С оператором встретилась, договор подписали, сумму за поездку передала, расписку взяла. Перед поездкой скинут ссылку, нужно будет 
+         //}
         // Colors can be set in a variety of ways:
         // - CSS named colors: "red"
         // - RGB hex: "#rgb", "#rgba", "#rrggbb", "#rrggbbaa"
         // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
 
         // Color of the ring on the active monitor.
-        active-color "#d79921"
+        // active-color "#d79921"
 
         // Color of the ring on inactive monitors.
         //
         // The focus ring only draws around the active window, so the only place
         // where you can see its inactive-color is on other monitors.
-        inactive-color "#7c6f64"
+        inactive-color "#665c54"
 
         // You can also use gradients. They take precedence over solid colors.
         // Gradients are rendered the same as CSS linear-gradient(angle, from, to).
@@ -119,13 +131,12 @@ layout {
         // You can use any CSS linear-gradient tool on the web to set these up.
         // Changing the color space is also supported, check the wiki for more info.
         //
-        // active-gradient from="#80c8ff" to="#c7ff7f" angle=45
+
 
         // You can also color the gradient relative to the entire view
         // of the workspace, rather than relative to just the window itself.
         // To do that, set relative-to="workspace-view".
         //
-        // inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
     }   
 
     // You can enable drop shadows for windows.
@@ -195,25 +206,25 @@ spawn-at-startup  "mako"
 spawn-at-startup  "/lib/polkit-1/polkitd"
 spawn-at-startup  "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 
-workspace "micelause" {
+workspace "󰈹" {
   open-on-output "HDMI-A-4"
 }
 
 spawn-at-startup "waterfox"
 window-rule {
   match at-startup=true app-id="waterfox"
-  open-on-workspace "micelause"
+  open-on-workspace "󰈹"
   open-maximized true
 }
 spawn-at-startup "Telegram"
 window-rule {
   match at-startup=true app-id="Telegram"
-  open-on-workspace "micelause"
+  open-on-workspace "󰈹"
 }
 spawn-at-startup "spotify-launcher"
 window-rule {
   match at-startup=true app-id="spotify-launcher"
-  open-on-workspace "micelause"
+  open-on-workspace "󰈹"
 }
 window-rule {
   match app-id="Alacritty"
@@ -456,15 +467,15 @@ binds {
     Mod+7 { focus-workspace 7; }
     Mod+8 { focus-workspace 8; }
     Mod+9 { focus-workspace 9; }
-    Mod+Ctrl+1 { move-column-to-workspace 1; }
-    Mod+Ctrl+2 { move-column-to-workspace 2; }
-    Mod+Ctrl+3 { move-column-to-workspace 3; }
-    Mod+Ctrl+4 { move-column-to-workspace 4; }
-    Mod+Ctrl+5 { move-column-to-workspace 5; }
-    Mod+Ctrl+6 { move-column-to-workspace 6; }
-    Mod+Ctrl+7 { move-column-to-workspace 7; }
-    Mod+Ctrl+8 { move-column-to-workspace 8; }
-    Mod+Ctrl+9 { move-column-to-workspace 9; }
+    Mod+Shift+1 { move-column-to-workspace 1; }
+    Mod+Shift+2 { move-column-to-workspace 2; }
+    Mod+Shift+3 { move-column-to-workspace 3; }
+    Mod+Shift+4 { move-column-to-workspace 4; }
+    Mod+Shift+5 { move-column-to-workspace 5; }
+    Mod+Shift+6 { move-column-to-workspace 6; }
+    Mod+Shift+7 { move-column-to-workspace 7; }
+    Mod+Shift+8 { move-column-to-workspace 8; }
+    Mod+Shift+9 { move-column-to-workspace 9; }
 
     // Alternatively, there are commands to move just a single window:
     // Mod+Ctrl+1 { move-window-to-workspace 1; }
