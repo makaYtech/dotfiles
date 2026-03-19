@@ -22,6 +22,10 @@
 
 ``` bash
 git clone https://github.com/makaYtech/dotfiles.git
+rm -rf ~/.config/niri
+rm -rf ~/.config/quickshell
+rm -rf ~/.config/alacritty
+rm -rf ~/.config/waybar
 cd dotfiles
 stow .
 ```

@@ -1,2 +1,7 @@
+[sie][Reverb#0]
+bypass=true
+decayTime=5
+predelay=1
+
 [soe][Reverb#0]
 roomSize=4
