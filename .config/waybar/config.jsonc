@@ -21,9 +21,8 @@
           "on-click": "wofi --allow-images --show drun --columns 3 - | -s ~/.config/wofi/style.css",
           "class": "arch-icon"
     },
-    "sway/language": {
+    "niri/language": {
   	  "format": "{short}",  
-      "on-click": "swaymsg input type:keyboard xkb_switch_layout next",
       "tooltip": true
     },
     "custom/playerctl": {
@@ -44,10 +43,10 @@
         "format-alt": "{:%Y-%m-%d}"
     },
     "network": {
-      "format": "{icon} {signalStrength}%",
-      "format-disconnected": "󰖪 Disconnected",
+      "format-wifi": "{icon} {signalStrength}%",
+      "format-ethernet": "󰈀",
+      "format-disconnected": "󰖪  Disconnected",
       "format-icons": [ "󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 " ],
-      "tooltip-format": "{ipaddr} via {essid}"
     },
     "pulseaudio": {
       "format": "{icon} {volume}%",

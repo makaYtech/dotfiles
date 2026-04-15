@@ -1,6 +1,3 @@
-[sie][Equalizer#0]
-outputGain=36
-
 [sie][Equalizer#0#left]
 band0Frequency=22.409377607517197
 band0Gain=-36

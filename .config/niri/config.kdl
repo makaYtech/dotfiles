@@ -147,7 +147,7 @@ layout {
         // By default, the shadow draws only around its window, and not behind it.
         // Uncomment this setting to make the shadow draw behind its window.
         //
-        // Note that niri has no way of knowing about the CSD window corner
+        // Note that niri has no way of knowing about the CSD window corne
         // radius. It has to assume that windows have square corners, leading to
         // shadow artifacts inside the CSD rounded corners. This setting fixes
         // those artifacts.
@@ -206,6 +206,9 @@ spawn-at-startup  "mako"
 spawn-at-startup  "/lib/polkit-1/polkitd"
 spawn-at-startup  "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 
+workspace "" {
+  open-on-output "HDMI-A-4"
+}
 workspace "󰈹" {
   open-on-output "HDMI-A-4"
 }
@@ -219,12 +222,18 @@ window-rule {
 spawn-at-startup "Telegram"
 window-rule {
   match at-startup=true app-id="Telegram"
-  open-on-workspace "󰈹"
+  open-on-workspace ""
 }
 spawn-at-startup "spotify-launcher"
 window-rule {
   match at-startup=true app-id="spotify-launcher"
   open-on-workspace "󰈹"
+}
+spawn-at-startup "vesktop"
+window-rule {
+  match at-startup=true app-id="vesktop"
+  open-on-workspace ""
+  open-maximized true
 }
 window-rule {
   match app-id="Alacritty"
