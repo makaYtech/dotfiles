@@ -1,4 +1,6 @@
 [soe][BassEnhancer#0]
 amount=1
+blend=-10
+bypass=true
 harmonics=8.6
 scope=200

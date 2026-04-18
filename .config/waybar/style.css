@@ -2,7 +2,12 @@
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif, "Nerd Font Propo";
     font-size: 16px;
     color: @color;
-    background-color: @background;
+    background-color: transparent;
+    background: transparent;
+}
+
+#waybar {
+    background-color: transparent;
 }
 
 @import "massCss.css";
